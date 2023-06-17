@@ -12,7 +12,7 @@ private void setWallpaperAuto() {
     }
 ```
 
-### Code Genaret by AI (CHatGPT)
+### Code Genarate by AI (CHatGPT)
 
 ```
 private void setWallpaperAI() {
