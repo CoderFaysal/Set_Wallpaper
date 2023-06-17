@@ -15,13 +15,14 @@ private void setWallpaperAuto() {
 ### Code Genaret by AI (CHatGPT)
 
 ```
-Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
-                WallpaperManager wallpaperManager = WallpaperManager.getInstance(MainActivity.this);
-                try {
-                    wallpaperManager.setBitmap(bitmap);
-                    // Show a success message or perform any other actions
-                } catch (IOException e) {
-                    e.printStackTrace();
-                    // Handle error if wallpaper setting fails
-                }
+private void setWallpaperAI() {
+        Bitmap bitmap = ((BitmapDrawable) full_images.getDrawable()).getBitmap();
+        WallpaperManager wallpaperManager = WallpaperManager.getInstance(SetWallpaper.this);
+        try {
+            wallpaperManager.setBitmap(bitmap);
+            Toast.makeText(getApplicationContext(), "Wallpaper Set Successful", Toast.LENGTH_SHORT).show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 ```
